@@ -16,6 +16,7 @@ public class EncryptionDecorator extends DataSourceDecorator{
     public String readData() {
         return decode(super.readData());
     }
+
     private String encode(String data){
         byte[] result = data.getBytes();
         for(int i =0; i < result.length; i++){
